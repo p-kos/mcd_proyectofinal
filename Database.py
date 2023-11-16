@@ -8,7 +8,13 @@ import pandas as pd
 
 class Database:
 
-    def __init__(self, od_Spreadsheet_filePath, os_Spreadsheet_filePath, odfundusImages, osfundusImages, odimagesWithContours, osimagesWithContours):
+    def __init__(self, 
+                 od_Spreadsheet_filePath, 
+                 os_Spreadsheet_filePath, 
+                 odfundusImages, 
+                 osfundusImages, 
+                 odimagesWithContours, 
+                 osimagesWithContours):
         pd.set_option('display.max_colwidth', 500)
         df_od = pd.read_excel(od_Spreadsheet_filePath, header=2)
         df_od.columns=[ 'id'\
@@ -150,15 +156,6 @@ class Database:
     def delete(self, index: str):
         self._datasource = self._datasource.drop(index)
         return self
-
-    # def udpate(self, index, person: Person):
-    #     self._datasource.at[index, 'category'] = image.get_category()
-    #     self._datasource.at[index, 'file_name'] = image.get_fileName()
-    #     self._datasource.at[index, 'format'] = image.get_format()
-    #     self._datasource.at[index, 'width'] = image.get_width()
-    #     self._datasource.at[index, 'height'] = image.get_height()
-    #     self._datasource.at[index, 'path'] = image.get_path()
-    #     return self
 
     def get(self, index) -> Person:
 

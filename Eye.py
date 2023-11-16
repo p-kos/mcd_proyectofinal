@@ -3,7 +3,15 @@ from Refractive_Defect import Refractive_Defect
 from IOP import IOP
 
 class Eye:
-    def __init__(self, diagnosis = None, refractiveDefect:Refractive_Defect = None, phakic_Pseudophakic = None, iop:IOP = None, pachymetry = None, axialLength = None, vf_md = None, fundusImage: EyeImage = None, imageWithContour: EyeImage = None):
+    def __init__(self, diagnosis = None, 
+                 refractiveDefect: Refractive_Defect = None, 
+                 phakic_Pseudophakic = None, 
+                 iop: IOP = None, 
+                 pachymetry = None, 
+                 axialLength = None, 
+                 vf_md = None, 
+                 fundusImage: EyeImage = None, 
+                 imageWithContour: EyeImage = None):
       self._diagnosis = diagnosis
       self._refractiveDefect = refractiveDefect
       self._phakic_Pseudophakic = phakic_Pseudophakic

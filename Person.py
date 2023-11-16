@@ -4,7 +4,12 @@ from matplotlib import pyplot as plt
 from Eye import Eye
 
 class Person:
-    def __init__(self, id = None, age: int = None, gender = None, odEye: Eye = None, osEye: Eye = None):
+    def __init__(self, 
+                 id = None, 
+                 age: int = None, 
+                 gender = None, 
+                 odEye: Eye = None, 
+                 osEye: Eye = None):
         self._id = id
         self._age = age
         self._gender = gender

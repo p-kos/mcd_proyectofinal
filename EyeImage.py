@@ -19,10 +19,12 @@ class EyeImage:
           path = os.path.dirname(fullPath)
           id = int(file_name[-9:-6])
           im = cv.imread(fullPath)
-          format = ext
-          width = im.shape[0]
-          height = im.shape[1]
-          return EyeImage(id, fileName=file_name, format=ext, width = im.shape[0], height = im.shape[1], path = os.path.dirname(fullPath))
+          return EyeImage(id, 
+                          fileName = file_name, 
+                          format = ext, 
+                          width = im.shape[0], 
+                          height = im.shape[1], 
+                          path = path)
 
     @property
     def id(self) -> str:

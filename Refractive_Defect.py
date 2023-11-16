@@ -1,5 +1,7 @@
 class Refractive_Defect:
-    def __init__(self, dioptre1 = None, dioptre2 = None, astigmatism = None):
+    def __init__(self, dioptre1 = None, 
+                 dioptre2 = None, 
+                 astigmatism = None):
         self._dioptre1 = dioptre1
         self._dioptre2 = dioptre2
         self._astigmatism = astigmatism
