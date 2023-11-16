@@ -1,0 +1,5 @@
+[core]
+    remote = papiladbremote
+['remote "papiladbremote"']
+    url = gdrive://1LBMzmqqiM6C2mEUu51WoVXC7WqsYLnXz
+    gdrive_acknowledge_abuse = true
